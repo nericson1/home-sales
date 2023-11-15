@@ -4,7 +4,7 @@
 
 This repository contains just one file titled `home_sales.ipynb`, which serves to demonstrate understanding of how to use PySpark to read in a CSV file and transform that into a temporary table view for SQL querying.
 
-After necessary dependencies were imported, a Spark Session was initiated and a dataframe was created from `home_sales_revised.csv`; the CSV was retrieved from AWS. A temporary table view of the dataframe was created and a series of SQL queries were made using Spark. Comparisons were made between the time cost of querying the data traditionally vs after caching the table vs from parquet data. The findings are as follows:
+The ipynb file was written using Google Colab and downloaded once the code was functional and completed. After necessary dependencies were imported, a Spark Session was initiated and a dataframe was created from `home_sales_revised.csv`; the CSV was retrieved from AWS. A temporary table view of the dataframe was created and a series of SQL queries were made using Spark. Comparisons were made between the time cost of querying the data traditionally vs after caching the table vs from parquet data. The findings are as follows:
 
 - Traditional spark.sql query took 0.572 seconds to complete
 - The same spark.sql query from the cached table took 0.241 seconds to complete
